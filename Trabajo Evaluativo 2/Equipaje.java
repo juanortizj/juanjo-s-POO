@@ -16,7 +16,7 @@ public class Equipaje {
 
 class Bodega extends Equipaje {
     private static final double PESO_MAXIMO = 8.0;
-    private static final double TARIFA_EXCESO_PESO = 500.0; 
+    private static final double TARIFA_EXCESO_PESO = 500.0; // <--- Cambiado a 500
 
     public Bodega(double peso, double tamanio) {
         super(peso, tamanio);
@@ -40,10 +40,10 @@ class Cabina extends Equipaje {
     public Cabina(double peso, double tamanio) {
         super(peso, tamanio);
     }
-    
+
     
     public double calcularPrecio() {
-        return PRECIO_ESTANDAR - (TIEMPO_PROMEDIO_ESPERA * DESCUENTO_POR_ESPERA);
+        return Math.max(8090, PRECIO_ESTANDAR - (TIEMPO_PROMEDIO_ESPERA * DESCUENTO_POR_ESPERA));
     }
 }
 
