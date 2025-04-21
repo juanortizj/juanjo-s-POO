@@ -22,7 +22,7 @@ class Bodega extends Equipaje {
         super(peso, tamanio);
     }
 
-    @Override
+    
     public double calcularPrecio() {
         double precioCalculado = PRECIO_ESTANDAR;
         if (peso > PESO_MAXIMO) {
@@ -41,7 +41,7 @@ class Cabina extends Equipaje {
         super(peso, tamanio);
     }
 
-    @Override
+    
     public double calcularPrecio() {
         return PRECIO_ESTANDAR - (TIEMPO_PROMEDIO_ESPERA * DESCUENTO_POR_ESPERA);
     }
