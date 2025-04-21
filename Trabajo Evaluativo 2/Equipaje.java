@@ -40,7 +40,7 @@ class Cabina extends Equipaje {
     public Cabina(double peso, double tamanio) {
         super(peso, tamanio);
     }
-
+    
     
     public double calcularPrecio() {
         return PRECIO_ESTANDAR - (TIEMPO_PROMEDIO_ESPERA * DESCUENTO_POR_ESPERA);
