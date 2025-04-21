@@ -71,8 +71,8 @@ class CalculadorPrecioTotal {
         }
 
         System.out.println("\n--- Totales ---");
-        System.out.printf("Total General: ", totalGeneral);
-        System.out.printf("Total Bodega: ", totalBodega);
-        System.out.printf("Total Cabina: ", totalCabina);
+        System.out.printf("Total General: $%.0f\n", totalGeneral);
+        System.out.printf("Total Bodega: $%.0f\n", totalBodega);
+        System.out.printf("Total Cabina: $%.0f\n", totalCabina);
     }
 }
