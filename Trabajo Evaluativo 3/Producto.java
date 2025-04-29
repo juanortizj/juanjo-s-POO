@@ -1,11 +1,15 @@
 public class Producto {
+    protected int numero;
 
-    private int numero;
-
-    public Producto(int numero){
+    public Producto(int numero) {
         this.numero = numero;
     }
-    public String toString(){
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public String toString() {
         return "Producto { numero: " + numero + " }";
     }
 }
