@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         // Crear fotos
         Foto[] fotos = { 
-            new Foto("foto1.jpg"), 
-            new Foto("foto2.jpg") 
+            new Foto("foto11.jpg"), 
+            new Foto("foto22.jpg") 
         };
 
         // Crear productos
